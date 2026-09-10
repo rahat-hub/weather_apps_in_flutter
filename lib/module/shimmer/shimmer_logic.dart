@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 
 class ShimmerLogic extends GetxController {
-  // শুরুতে isLoading থাকবে true (শিমার দেখাবে)
   var isLoading = true.obs;
 
   @override
