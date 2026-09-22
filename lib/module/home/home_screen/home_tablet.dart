@@ -36,10 +36,36 @@ class HomeTabletScreen extends GetView<HomeLogic> {
                       spacing: WSizes.defaultSpacing,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const HomeMainImageView(imagePath: AssetConstants.partyCloudy, imageHeight: 200),
-                        const HomeLocationAndTempView(),
-                        const HomeQuickStateView(),
-                        const HomeSunriseAndSunsetView(),
+
+                        Row(
+                          spacing: WSizes.spaceBtwSections,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Expanded(
+                              child: Column(
+                                spacing: WSizes.spaceBtwItems,
+                                children: [
+                                  const HomeMainImageView(imagePath: AssetConstants.partyCloudy, imageHeight: 200),
+                                  const HomeLocationAndTempView(),
+                                ],
+                              ),
+                            ),
+
+
+                            Expanded(
+                              child: Column(
+                                spacing: WSizes.spaceBtwItems,
+                                children: [
+                                  const HomeQuickStateView(),
+                                  const HomeSunriseAndSunsetView(),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+
+
+
                       ],
                     ),
                   ),

@@ -18,6 +18,7 @@ class HomeSearchLocationView extends GetView<HomeLogic> {
         hintText: 'Search location',
         suffixIcon: Icon(Icons.search),
       ),
+      onTap: () => controller.routeChangeFunction(),
     );
   }
 }

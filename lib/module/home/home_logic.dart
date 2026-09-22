@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:weather_apps_in_flutter/routes/app_routes.dart';
 
 class HomeLogic extends GetxController {
   RxBool isLoading = true.obs;
@@ -22,4 +23,9 @@ class HomeLogic extends GetxController {
     searchController.dispose();
     super.dispose();
   }
+
+  Future<void> routeChangeFunction() async {
+    await Get.toNamed(AppRoutes.searchLocation);
+  }
+
 }

@@ -36,9 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.9
   get: ^4.7.3
   shimmer: ^4.0.0
-  material_ui: ^1.2.0
+  material_ui: ^1.4.0
   responsive_builder: ^0.7.1
-  lottie: ^3.5.1
+  lottie: ^3.6.1
 
   cupertino_ui: any
   google_fonts: ^8.2.1
